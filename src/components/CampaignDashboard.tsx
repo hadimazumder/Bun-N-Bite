@@ -27,8 +27,8 @@ export default function CampaignDashboard({ currentWeek, onWeekChange }: Campaig
   ];
 
   return (
-    <section id="daily-tasks" className="bg-gray-50 border-b border-gray-200 shadow-sm">
-      <div className="max-w-6xl mx-auto px-4 py-4">
+    <section id="daily-tasks">
+      <div>
         <div className="grid lg:grid-cols-[1fr_1.25fr] gap-4">
           <Card className="p-4">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
@@ -82,7 +82,7 @@ export default function CampaignDashboard({ currentWeek, onWeekChange }: Campaig
               </span>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-2 max-h-64 overflow-y-auto pr-1">
+            <div className="grid md:grid-cols-2 gap-2">
               {todayTasks.map((item, index) => (
                 <div key={`${item.id}-${index}`} className="rounded-lg border border-gray-100 bg-gray-50 p-2">
                   <ActionCheckbox id={item.id} label={item.task} tone={item.tone} compact />
