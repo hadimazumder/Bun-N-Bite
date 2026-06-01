@@ -31,6 +31,7 @@ export default function ActionCheckbox({
   const updateChecked = (nextChecked: boolean) => {
     setChecked(nextChecked);
     localStorage.setItem(storageKey, String(nextChecked));
+    window.dispatchEvent(new CustomEvent("bnb-check-change"));
   };
 
   return (
