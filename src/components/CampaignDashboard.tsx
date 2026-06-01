@@ -27,7 +27,7 @@ export default function CampaignDashboard({ currentWeek, onWeekChange }: Campaig
   ];
 
   return (
-    <section id="daily-tasks" className="sticky top-[45px] z-40 bg-gray-50/95 backdrop-blur border-b border-gray-200 shadow-sm">
+    <section id="daily-tasks" className="bg-gray-50 border-b border-gray-200 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 py-4">
         <div className="grid lg:grid-cols-[1fr_1.25fr] gap-4">
           <Card className="p-4">
